@@ -1,3 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+//Comando para nao abrir o terminal no windows
 use macroquad::prelude::*;
 
 struct Nave{
@@ -61,6 +63,9 @@ fn conf() -> Conf {
 
 #[macroquad::main(conf)]
 async fn main() {
+    for _ in 0..30{
+        next_frame().await;
+    }
     let mut gameover:bool = false;
     let mut jogador: Nave = Nave{
         posicao: Vec2::new(screen_width()/2.0, screen_height()/2.0),
@@ -75,6 +80,7 @@ async fn main() {
     for _ in 0..rand::gen_range(4, 8){
         asteroides.push(criar_asteroide(rand::gen_range(4, 7),jogador.posicao,DISTANCIA_SEGURA_CRIACAO));
     }
+    
 
     loop {
         if gameover{
