@@ -1,5 +1,11 @@
 # Asteroids
-Jogo estilo Asteroids feito em Rust com [macroquad](https://macroquad.rs), com suporte para Linux e Windows.
+Jogo estilo Asteroids feito em Rust com [macroquad](https://macroquad.rs), com suporte para Linux e Windows.  
+  
+![Rust](https://img.shields.io/badge/Rust-F74C00?style=for-the-badge&logo=rust&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+
+![Gameplay](Asteroides_Linux.jpeg)
 
 ## Como funciona
 
