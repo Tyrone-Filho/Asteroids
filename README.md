@@ -47,3 +47,4 @@ chmod +x Asteroides_Linux
 | ← / → | Girar a nave |
 | Espaço | Atirar (máximo de 5 tiros na tela) |
 | Enter | Jogar novamente (na tela final) |
+| Shift Esquerdo | Boost |
